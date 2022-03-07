@@ -6,11 +6,14 @@
 @import "./base/typography";
 @import "./base/utilities";
 
+@import "./components/button";
+@import "./components/floating";
 @import "./components/popup";
 @import "./components/projects";
 
 @import "./layout/footer";
 @import "./layout/header";
+@import "./layout/hero";
 @import "./layout/layout";
 @import "./layout/navigation";
 

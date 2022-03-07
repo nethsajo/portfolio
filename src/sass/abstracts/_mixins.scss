@@ -1,0 +1,6 @@
+@mixin gradient($colorOne, $colorTwo) {
+  background-image: linear-gradient($colorOne, $colorTwo);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

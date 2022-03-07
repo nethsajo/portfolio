@@ -1,0 +1,31 @@
+.hero {
+  padding-top: 6.4rem;
+  padding-bottom: 8rem;
+  position: relative;
+
+  &__wrapper {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+
+  &__greet {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--color-black-light-2);
+  }
+
+  &__message {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8;
+    max-width: 65rem;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+}

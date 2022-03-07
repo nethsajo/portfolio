@@ -1,0 +1,54 @@
+.floating {
+  position: absolute;
+
+  &__item {
+    width: 8rem;
+    height: 8rem;
+    background-color: #d2e1fe;
+    border-radius: var(--b-radius-rnd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    animation: move-up-down 2.5s infinite alternate;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      border: 1px solid #e5e5e5;
+      background-color: transparent;
+      border-radius: var(--b-radius-rnd);
+    }
+
+    &--1 {
+      left: 5%;
+      bottom: 25%;
+
+      &::before {
+        width: 50rem;
+        height: 50rem;
+      }
+    }
+
+    &--2 {
+      top: 0;
+      left: 50%;
+
+      &::before {
+        width: 60rem;
+        height: 60rem;
+      }
+    }
+
+    &--3 {
+      right: 15%;
+      bottom: 40%;
+
+      &::before {
+        width: 40rem;
+        height: 40rem;
+      }
+    }
+  }
+}
