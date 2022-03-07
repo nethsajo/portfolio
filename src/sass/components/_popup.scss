@@ -1,0 +1,43 @@
+.popup {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 20rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0 1rem rgba(32, 32, 32, 0.03);
+  padding: 1.6rem 0;
+  border-radius: var(--b-radius-5);
+  z-index: 10;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--color-black-light-2);
+      padding: 1.6rem 3.2rem;
+      transition: var(--transition);
+
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+
+    &:hover {
+      background-color: #fcfcfc;
+      color: var(--color-primary);
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+  }
+}

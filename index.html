@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./src/sass/main.scss" />
+    <!-- SCRIPTS -->
+    <script type="module" defer src="./src/js/controller.js"></script>
+    <!-- TITLE -->
     <title>Portfolio &mdash; Jan Kenneth Sajo</title>
   </head>
   <body>
-    <h1>My Portfolio</h1>
+    <header class="header">
+      <a href="#">
+        <span class="header__logo">JKVS</span>
+      </a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Connect</a>
+            <div class="popup"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
   </body>
 </html>

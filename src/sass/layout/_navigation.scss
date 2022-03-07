@@ -1,0 +1,45 @@
+.navigation {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 4.8rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--color-black-light-2);
+      display: inline-block;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.7rem;
+      left: 0;
+      width: 0;
+      height: 0.2rem;
+      background-color: var(--color-primary);
+      transition: var(--transition);
+    }
+
+    &:hover {
+      color: var(--color-primary);
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
