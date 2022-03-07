@@ -3,6 +3,25 @@ import { renderIconDefinitionToSVGElement } from '@ant-design/icons-svg/es/helpe
 
 class PopupView extends View {
   _parentElement = document.querySelector('.popup');
+  _navigationList = document.querySelector('.navigation__list');
+
+  constructor() {
+    super();
+    this._addShowHidePopup();
+  }
+
+  _togglePopup(e) {
+    const click = e.target.closest('.navigation__connect');
+    if (!click) return;
+    this._parentElement.classList.toggle('active');
+  }
+
+  _addShowHidePopup() {
+    this._navigationList.addEventListener(
+      'click',
+      this._togglePopup.bind(this)
+    );
+  }
 
   _generateMarkup() {
     return `
@@ -16,8 +35,6 @@ class PopupView extends View {
     const { title, link, icon } = links;
     const svg = renderIconDefinitionToSVGElement(icon, {
       extraSVGAttrs: {
-        width: '24px',
-        height: '24px',
         fill: 'currentColor',
         class: 'popup__icon',
       },

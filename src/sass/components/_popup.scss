@@ -7,7 +7,17 @@
   box-shadow: 0 0 1rem rgba(32, 32, 32, 0.03);
   padding: 1.6rem 0;
   border-radius: var(--b-radius-5);
+  transform: translateY(-2rem);
+  opacity: 0;
+  visibility: hidden;
   z-index: 10;
+  transition: var(--transition);
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
 
   &__list {
     display: flex;
