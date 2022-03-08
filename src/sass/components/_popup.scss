@@ -10,7 +10,7 @@
   transform: translateY(-2rem);
   opacity: 0;
   visibility: hidden;
-  z-index: 10;
+  z-index: 200;
   transition: var(--transition);
 
   &.active {

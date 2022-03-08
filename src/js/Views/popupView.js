@@ -1,5 +1,4 @@
 import View from './View';
-import { renderIconDefinitionToSVGElement } from '@ant-design/icons-svg/es/helpers';
 
 class PopupView extends View {
   _parentElement = document.querySelector('.popup');
@@ -26,19 +25,14 @@ class PopupView extends View {
   _generateMarkup() {
     return `
       <ul class="popup__list">
-        ${this._data.map(this._generatePopupLinks).join('')}
+        ${this._data.map(links => this._generatePopupLinks(links)).join('')}
       </ul>
     `;
   }
 
   _generatePopupLinks(links) {
     const { title, link, icon } = links;
-    const svg = renderIconDefinitionToSVGElement(icon, {
-      extraSVGAttrs: {
-        fill: 'currentColor',
-        class: 'popup__icon',
-      },
-    });
+    const svg = this.renderSVG(icon, 'popup__icon');
 
     return `
       <li class="popup__item">

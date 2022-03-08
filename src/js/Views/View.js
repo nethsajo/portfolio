@@ -1,3 +1,5 @@
+import { renderIconDefinitionToSVGElement } from '@ant-design/icons-svg/es/helpers';
+
 export default class View {
   _data;
 
@@ -10,5 +12,14 @@ export default class View {
 
   _clear() {
     this._parentElement.innerHTML = '';
+  }
+
+  renderSVG(icon, className = '') {
+    return renderIconDefinitionToSVGElement(icon, {
+      extraSVGAttrs: {
+        fill: 'currentColor',
+        class: className,
+      },
+    });
   }
 }

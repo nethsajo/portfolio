@@ -1,29 +1,41 @@
 .floating {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.6rem;
+  height: 9.6rem;
+  animation: move-up-down 2.5s infinite alternate ease-in-out;
+  transition: var(--transition);
+  z-index: -2;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--color-white-dark);
+    background-color: transparent;
+    pointer-events: none;
+    border-radius: var(--b-radius-rnd);
+  }
 
   &__item {
-    width: 8rem;
-    height: 8rem;
-    background-color: #d2e1fe;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-light);
     border-radius: var(--b-radius-rnd);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-black);
-    animation: move-up-down 2.5s infinite alternate;
+    transition: var(--transition);
 
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      border: 1px solid #e5e5e5;
-      background-color: transparent;
-      border-radius: var(--b-radius-rnd);
+    &:hover {
+      transform: scale(1.25);
     }
 
     &--1 {
       left: 5%;
-      bottom: 25%;
+      bottom: 15%;
 
       &::before {
         width: 50rem;
@@ -38,17 +50,24 @@
       &::before {
         width: 60rem;
         height: 60rem;
+        z-index: 10;
       }
     }
 
     &--3 {
-      right: 15%;
-      bottom: 40%;
+      right: 8%;
+      bottom: 30%;
 
       &::before {
-        width: 40rem;
-        height: 40rem;
+        width: 25rem;
+        height: 25rem;
       }
     }
+  }
+
+  &__icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    fill: var(--color-primary-dark-2);
   }
 }

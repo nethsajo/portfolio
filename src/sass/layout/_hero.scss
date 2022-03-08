@@ -1,7 +1,9 @@
 .hero {
-  padding-top: 6.4rem;
+  padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
+  overflow: hidden;
+  z-index: 10;
 
   &__wrapper {
     max-width: 100rem;
@@ -11,14 +13,15 @@
 
   &__greet {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
     color: var(--color-black-light-2);
   }
 
   &__message {
-    font-size: 1.8rem;
+    display: inline-block;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.8;
     max-width: 65rem;
