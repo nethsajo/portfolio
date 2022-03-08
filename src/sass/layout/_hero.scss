@@ -4,12 +4,7 @@
   position: relative;
   overflow: hidden;
   z-index: 10;
-
-  &__wrapper {
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 0 3.2rem;
-  }
+  min-height: 100vh;
 
   &__greet {
     display: inline-block;

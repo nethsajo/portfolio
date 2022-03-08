@@ -1,0 +1,48 @@
+.about {
+  background-color: var(--color-white-dark);
+  padding: 9.6rem 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    gap: 9.6rem 6.4rem;
+  }
+
+  &__photo {
+    width: 100%;
+    border-radius: var(--b-radius-5);
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: clamp(3.2rem, 3vw, 6.4rem);
+    font-weight: 600;
+    color: var(--color-black-light-2);
+    line-height: 1.4;
+  }
+
+  &__position {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white-dark);
+    padding: 0.4rem 0.8rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    &:not(:last-child) {
+      margin-bottom: 3.2rem;
+    }
+  }
+}

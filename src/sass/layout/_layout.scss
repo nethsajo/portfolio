@@ -1,0 +1,25 @@
+.wrapper {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.flex {
+  display: flex;
+
+  &--center-v {
+    align-items: center;
+  }
+
+  &--center-h {
+    justify-content: center;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+
+  &--col {
+    flex-direction: column;
+  }
+}

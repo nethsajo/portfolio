@@ -12,7 +12,7 @@ class HeroView extends View {
 
     return `
       <section class="hero">
-        <div class="hero__wrapper">
+        <div class="wrapper">
           <div class="hero__textbox u-mb-md">
             <span class="hero__greet u-mb-xs">👋 ${this._data.greetings}</span>
             <h1 class="heading__primary u-mb-sm">${this._data.name}</h1>
