@@ -8,6 +8,7 @@
   top: 0;
   height: var(--header-height);
   margin: 0 auto;
+  z-index: 1000;
 
   &__logo {
     font-size: 1.4rem;

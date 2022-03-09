@@ -8,8 +8,6 @@ class HeroView extends View {
   }
 
   _generateMarkup() {
-    console.log(this._data);
-
     return `
       <section class="hero">
         <div class="wrapper">
@@ -24,7 +22,7 @@ class HeroView extends View {
             </p>
           </div>
           <div class="hero__buttons">
-            <a href="#" class="btn btn--outline btn--sm">Contact me</a>
+            <a href="#" class="btn btn--outline btn--sm">Get in touch</a>
             <a href="#" class="btn btn--outline btn--sm">Resume</a>
           </div>
         </div>

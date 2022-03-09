@@ -1,0 +1,49 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    width: 80%;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-primary-dark);
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: var(--b-radius-3);
+    min-height: 5rem;
+    width: auto;
+    transition: var(--transition);
+    backface-visibility: hidden;
+
+    & > svg {
+      width: 2.4rem;
+      height: 2.4rem;
+      fill: var(--color-primary);
+      margin-right: 1.6rem;
+    }
+
+    &:hover {
+      transform: translateY(-0.45rem);
+    }
+  }
+
+  &__title {
+    color: var(--color-black-light-2);
+  }
+}

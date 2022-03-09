@@ -1,6 +1,7 @@
-import { popupLinks, heroData } from './data';
+import { popupLinks, heroData, aboutData } from './data';
 
 export const state = {
   popupLinks,
   heroData,
+  aboutData,
 };
