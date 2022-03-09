@@ -17,8 +17,13 @@ const controlAbout = function () {
 
 const init = function () {
   controlPopupLinks();
-  controlHero();
+  // controlHero();
   controlAbout();
 };
 
 init();
+
+// setTimeout(() => {
+//   const loader = document.querySelector('.loader');
+//   loader.classList.add('hidden');
+// }, 1400);
