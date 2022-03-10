@@ -15,6 +15,9 @@ import {
 } from 'simple-icons/icons';
 
 import image from 'url:../images/me.jpg';
+import projectOne from 'url:../images/project-1.webp';
+import projectTwo from 'url:../images/project-2.webp';
+import projectThree from 'url:../images/project-3.webp';
 
 export const heroData = {
   greetings: 'Hello there, I am',
@@ -99,3 +102,45 @@ export const aboutData = {
     },
   ],
 };
+
+export const projects = [
+  {
+    id: 1,
+    name: 'Villa Lancaster',
+    image: projectOne,
+    description:
+      'A real estate landing page that you will see a list of available properties.',
+    languages: ['HTML', 'SASS'],
+    links: {
+      github: 'https://github.com/nethsajo/responsive-realestate-website',
+      live: 'https://villalancaster.netlify.app/',
+    },
+    type: 'Website Landing Page',
+  },
+  {
+    id: 2,
+    name: 'Bankify',
+    image: projectTwo,
+    description:
+      'A digital banking landing page that you will see their services and operations.',
+    languages: ['HTML', 'SASS', 'JavaScript'],
+    links: {
+      github: 'https://github.com/nethsajo/responsive-bankify-website',
+      live: 'https://bankify-js.netlify.app/',
+    },
+    type: 'Website Landing Page',
+  },
+  {
+    id: 3,
+    name: 'CookBook',
+    image: projectThree,
+    description:
+      "A recipe web application where you can discover recipes, cooks and how to's on the food you love.",
+    languages: ['HTML', 'SASS', 'JavaScript', 'API'],
+    links: {
+      github: 'https://github.com/nethsajo/cookbook',
+      live: 'https://cookbook-js.netlify.app/',
+    },
+    type: 'Website Application',
+  },
+];

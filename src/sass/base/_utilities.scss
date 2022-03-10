@@ -1,3 +1,7 @@
+.u-mb-xxs {
+  margin-bottom: 0.8rem;
+}
+
 .u-mb-xs {
   margin-bottom: 1.2rem;
 }
@@ -23,7 +27,7 @@
 }
 
 .u-fw-bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .u-c-pc {
@@ -36,4 +40,8 @@
 
 .u-t-uppercase {
   text-transform: uppercase;
+}
+
+.u-nt-r {
+  transform: none !important;
 }
