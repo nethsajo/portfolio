@@ -1,4 +1,5 @@
 import View from './View';
+import icon from 'url:../../icons/icons.svg';
 
 class AboutView extends View {
   _parentElement = document.querySelector('.main');
@@ -62,10 +63,13 @@ class AboutView extends View {
   }
 
   _generateMarkupSkills(tech) {
-    const { name, icon } = tech;
+    const { name, svg } = tech;
+    console.log(svg);
     return `
       <li class="skills__box">
-        ${icon}
+        <svg>
+          <use xlink:href="${icon}#${svg}"></use>
+        </svg>
         <span class="skills__title">${name.toUpperCase()}</span>
       </li>
     `;

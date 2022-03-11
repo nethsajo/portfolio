@@ -152,47 +152,6 @@
     gap: 1.8rem;
   }
 
-  &__link-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-black-light);
-    margin-right: 1rem;
-    transition: var(--transition);
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 0;
-      background-color: var(--color-primary);
-      border-radius: var(--b-radius-rnd);
-      z-index: -1;
-      transition: var(--transition);
-    }
-
-    &:hover {
-      color: var(--color-primary-light);
-
-      & > .projects__link--icon-t {
-        transform: rotate(-45deg);
-        transition: transform 300ms ease-in-out;
-      }
-
-      &::before {
-        width: 4.4rem;
-        height: 4.4rem;
-      }
-    }
-  }
-
-  &__link-icon {
-    width: 2.4rem;
-    height: 2.4rem;
-    fill: currentColor;
-  }
-
   &__img-box:hover &__caption {
     opacity: 1;
     visibility: visible;

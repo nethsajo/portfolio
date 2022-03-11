@@ -53,8 +53,8 @@ class ProjectView extends View {
           <h2 class="projects__title">${project.name}</h2>
           <div class="projects__link">
             <a href="${project.links.live}" target="_blank">
-              <div class="projects__link-box">
-                <svg class="projects__link-icon projects__link--icon-t">
+              <div class="icon">
+                <svg class="icon__svg">
                   <use
                     xlink:href="${icon}#icon-arrow-right"
                   ></use>
@@ -62,8 +62,8 @@ class ProjectView extends View {
               </div>
             </a>
             <a href="${project.links.github}" target="_blank">
-              <div class="projects__link-box">
-                <svg class="projects__link-icon">
+              <div class="icon">
+                <svg class="icon__svg icon--no-transform">
                   <use
                     xlink:href="${icon}#icon-github"
                   ></use>

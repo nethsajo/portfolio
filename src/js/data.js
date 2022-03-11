@@ -5,15 +5,6 @@ import {
   GithubOutlined,
 } from '@ant-design/icons-svg';
 
-import {
-  siHtml5,
-  siCss3,
-  siJavascript,
-  siSass,
-  siGit,
-  siGithub,
-} from 'simple-icons/icons';
-
 import image from 'url:../images/me.jpg';
 import projectOne from 'url:../images/project-1.webp';
 import projectTwo from 'url:../images/project-2.webp';
@@ -73,32 +64,32 @@ export const aboutData = {
     {
       id: 'html',
       name: 'html5',
-      icon: siHtml5.svg,
+      svg: 'icon-html5',
     },
     {
       id: 'css',
       name: 'css',
-      icon: siCss3.svg,
+      svg: 'icon-css3',
     },
     {
       id: 'sass',
       name: 'sass',
-      icon: siSass.svg,
+      svg: 'icon-sass',
     },
     {
       id: 'js',
       name: 'javascript',
-      icon: siJavascript.svg,
+      svg: 'icon-javascript',
     },
     {
       id: 'github',
       name: 'github',
-      icon: siGithub.svg,
+      svg: 'icon-github-skill',
     },
     {
       id: 'git',
       name: 'git',
-      icon: siGit.svg,
+      svg: 'icon-git',
     },
   ],
 };
