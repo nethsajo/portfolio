@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 9.6rem;
-  height: 9.6rem;
+  width: 8rem;
+  height: 8rem;
   animation: move-up-down 2.5s infinite alternate ease-in-out;
   transition: var(--transition);
   z-index: -2;
@@ -30,7 +30,7 @@
     transition: var(--transition);
 
     &:hover {
-      transform: scale(1.25);
+      transform: scale(1.2);
     }
 
     &--1 {
@@ -59,8 +59,8 @@
       bottom: 30%;
 
       &::before {
-        width: 25rem;
-        height: 25rem;
+        width: 35rem;
+        height: 35rem;
       }
     }
   }

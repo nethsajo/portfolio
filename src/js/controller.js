@@ -4,42 +4,28 @@ import HeroView from './Views/heroView';
 import AboutView from './Views/aboutView';
 import ProjectView from './Views/projectView';
 import ContactView from './Views/contactView';
+import ThemeView from './Views/themeView';
 
-const controlPopupLinks = function () {
-  PopupView.render(model.state.popupLinks);
-};
-
-const controlHero = function () {
-  HeroView.render(model.state.heroData);
-};
-
-const controlAbout = function () {
-  AboutView.render(model.state.aboutData);
-};
-
-const controlProjects = function () {
-  ProjectView.render(model.state.projects);
-};
-
-const controlContact = function () {
-  ContactView.render(model.state.contact);
+const controlTheme = function () {
+  ThemeView.setTheme();
 };
 
 const init = function () {
-  controlPopupLinks();
-  controlHero();
-  controlAbout();
-  controlProjects();
-  controlContact();
+  PopupView.render(model.state.popupLinks);
+  HeroView.render(model.state.heroData);
+  AboutView.render(model.state.aboutData);
+  ProjectView.render(model.state.projects);
+  ContactView.render(model.state.contact);
+  ThemeView.addHandlerRender(controlTheme);
+  ThemeView.getTheme();
 };
 
 init();
 
-// window.addEventListener('load', function () {
-//   document.body.style.overflow = 'visible';
-// });
-
-// setTimeout(() => {
-//   const loader = document.querySelector('.loader');
-//   loader.classList.remove('hidden');
-// }, 1400);
+window.addEventListener('load', function () {
+  document.body.style.overflow = 'visible';
+  setTimeout(() => {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('hidden');
+  }, 1500);
+});

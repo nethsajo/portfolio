@@ -1,0 +1,125 @@
+body.dark {
+  background-color: var(--color-black);
+  color: var(--color-white-darkest);
+}
+
+.dark {
+  & .navigation {
+    &__link {
+      &:link,
+      &:visited {
+        color: var(--color-white-darkest);
+      }
+
+      &:hover {
+        color: var(--color-primary-light);
+      }
+    }
+
+    &__icon {
+      color: var(--color-white-darkest);
+    }
+  }
+
+  & .popup {
+    background-color: var(--color-black-light);
+
+    &__link {
+      &:link,
+      &:visited {
+        color: var(--color-white-dark);
+      }
+
+      &:hover {
+        background-color: var(--color-black-light-2);
+        color: var(--color-primary-light);
+      }
+    }
+  }
+
+  & .hero {
+    &__greet,
+    &__message {
+      color: var(--color-white-darkest);
+    }
+  }
+
+  & .about {
+    background-color: var(--color-black-light);
+
+    &__name {
+      color: var(--color-white-dark);
+    }
+  }
+
+  & .floating {
+    &::before {
+      border-color: var(--color-black-light);
+    }
+
+    &__item {
+      background-color: var(--color-black-light-2);
+    }
+
+    &__icon {
+      fill: var(--color-primary-light);
+    }
+  }
+
+  & .skills {
+    &__box {
+      border-color: var(--color-primary);
+    }
+
+    &__title {
+      color: var(--color-white-darkest);
+    }
+  }
+
+  & .projects {
+    &__img-box {
+      border-color: var(--color-black-light);
+    }
+
+    &__title {
+      color: var(--color-white-dark);
+    }
+
+    &__type {
+      color: var(--color-white-darkest);
+    }
+  }
+
+  & .footer {
+    background-color: var(--color-black-light);
+
+    &__copyright {
+      color: var(--color-white-darkest);
+    }
+  }
+
+  & .heading {
+    &__secondary,
+    &__normal {
+      color: var(--color-white-dark);
+    }
+  }
+
+  & .btn {
+    &--outline {
+      color: var(--color-white-dark);
+    }
+  }
+
+  & .icon {
+    color: var(--color-white-darkest);
+  }
+
+  & .loader {
+    background-color: var(--color-black);
+
+    &__circle {
+      background-color: var(--color-primary-light);
+    }
+  }
+}

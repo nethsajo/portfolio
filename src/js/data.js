@@ -15,7 +15,7 @@ export const heroData = {
   name: 'Jan Kenneth Sajo',
   position: 'A self-taught Web Developer',
   description:
-    'An Information Technology graduate and an aspiring Full Stack Engineer from the Philippines. I create stuffs that live on the web.',
+    'An Information Technology graduate and an aspiring Full Stack Engineer from the Philippines. I create stuff that live on the web.',
   floatingLinks: [
     {
       id: 'github',
