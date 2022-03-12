@@ -119,7 +119,13 @@ body.dark {
     background-color: var(--color-black);
 
     &__circle {
-      background-color: var(--color-primary-light);
+      &::before {
+        background-color: var(--color-primary-light);
+      }
+
+      &::after {
+        background-color: var(--color-primary);
+      }
     }
   }
 }

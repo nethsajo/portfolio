@@ -60,17 +60,41 @@ ol {
   height: 100%;
   background-color: var(--color-primary-light);
   z-index: 9999;
+  overflow: hidden;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__circle {
-    width: 9.6rem;
-    height: 9.6rem;
-    background-color: var(--color-black);
-    border-radius: var(--b-radius-rnd);
-    animation: loader 1.5s linear infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      border-radius: var(--b-radius-rnd);
+      backface-visibility: hidden;
+    }
+
+    &::before {
+      content: '';
+      width: 8rem;
+      height: 8rem;
+      background-color: var(--color-black);
+      animation: loader 0.85s linear infinite;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 14rem;
+      height: 14rem;
+      background-color: var(--color-black-light);
+      z-index: -1;
+      animation: loader 0.8s linear infinite;
+    }
   }
 }
 

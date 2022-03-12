@@ -23,9 +23,9 @@ const init = function () {
 init();
 
 window.addEventListener('load', function () {
-  document.body.style.overflow = 'visible';
   setTimeout(() => {
     const loader = document.querySelector('.loader');
     loader.classList.add('hidden');
-  }, 1500);
+    document.body.style.overflow = 'visible';
+  }, 500);
 });
