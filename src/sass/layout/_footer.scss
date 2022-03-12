@@ -2,4 +2,35 @@
   padding: 8rem 0;
   width: 100%;
   background-color: var(--color-primary-light);
+
+  &__copyright {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-black-light-2);
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.2rem;
+  }
+
+  &__social-link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      transition: transform 300ms ease;
+    }
+
+    &:hover {
+      transform: translateY(-0.8rem);
+    }
+  }
+
+  &__social-logo {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--color-primary-dark-2);
+  }
 }
