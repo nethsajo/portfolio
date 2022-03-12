@@ -135,3 +135,10 @@ export const projects = [
     type: 'Website Application',
   },
 ];
+
+export const contact = {
+  heading: "Let's get in touch. It would make my day to hear from",
+  message:
+    "Feel free to connect with me, I will definitely reply. I'm always open to opportunities to be part of your visions.",
+  link: 'mailto:jankennethsajo@gmail.com',
+};
