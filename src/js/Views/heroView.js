@@ -10,7 +10,7 @@ class HeroView extends View {
   _generateMarkup() {
     return `
       <section class="hero">
-        <div class="wrapper">
+        <div class="hero__content wrapper">
           <div class="hero__textbox u-mb-md">
             <span class="hero__greet u-mb-xs">👋 ${this._data.greetings}</span>
             <h1 class="heading__primary u-mb-sm">${this._data.name}</h1>
@@ -20,15 +20,17 @@ class HeroView extends View {
             <p class="hero__message">
               ${this._data.description}
             </p>
+            ${this._data.floatingLinks
+              .map((links, i) => this._generateFloatingIconsMarkup(links, i))
+              .join('')}
           </div>
           <div class="hero__buttons">
             <a href="#" class="btn btn--outline btn--sm">Get in touch</a>
             <a href="#" class="btn btn--outline btn--sm">Resume</a>
           </div>
+          
         </div>
-        ${this._data.floatingLinks
-          .map((links, i) => this._generateFloatingIconsMarkup(links, i))
-          .join('')}
+        
       </section>
     `;
   }

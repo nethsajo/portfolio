@@ -6,7 +6,7 @@ class AboutView extends View {
 
   _generateMarkup() {
     return `
-      <section class="about">
+      <section class="about" id="about">
         <div class="wrapper">
           <h2 class="heading__secondary u-c-pd u-fw-bold u-mb-lg">About.</h2>
           <div class="about__content u-mb-lg">
@@ -64,7 +64,6 @@ class AboutView extends View {
 
   _generateMarkupSkills(tech) {
     const { name, svg } = tech;
-    console.log(svg);
     return `
       <li class="skills__box">
         <svg>

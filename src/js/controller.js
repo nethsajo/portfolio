@@ -29,3 +29,14 @@ window.addEventListener('load', function () {
     document.body.style.overflow = 'visible';
   }, 500);
 });
+
+let prevScrollpos = window.pageYOffset;
+window.addEventListener('scroll', function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('.header').style.top = '0';
+  } else {
+    document.querySelector('.header').style.top = '-8rem';
+  }
+  prevScrollpos = currentScrollPos;
+});

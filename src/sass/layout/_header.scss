@@ -1,14 +1,23 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 3.2rem;
   width: 100%;
-  position: relative;
+  position: fixed;
   top: 0;
+  left: 0;
   height: var(--header-height);
-  margin: 0 auto;
   z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: var(--transition);
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 128rem;
+    margin: 0 auto;
+    height: 100%;
+  }
 
   &__logo {
     font-size: 1.4rem;

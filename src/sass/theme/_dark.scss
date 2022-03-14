@@ -4,6 +4,10 @@ body.dark {
 }
 
 .dark {
+  & .header {
+    background-color: rgba(54, 54, 54, 0.3);
+  }
+
   & .navigation {
     &__link {
       &:link,

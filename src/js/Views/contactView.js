@@ -4,10 +4,8 @@ class ContactView extends View {
   _parentElement = document.querySelector('.main');
 
   _generateMarkup() {
-    console.log(this._data);
-
     return `
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="wrapper u-t-center">
           <h2 class="contact__heading heading__secondary u-fw-bold u-mb-sm">
             ${this._data.heading}

@@ -4,7 +4,6 @@
     display: inline-block;
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 1.2;
     transition: var(--transition);
   }
 
@@ -37,6 +36,7 @@
     text-transform: uppercase;
     overflow: hidden;
     backdrop-filter: blur(4px);
+    z-index: 10;
 
     &::before {
       content: '';

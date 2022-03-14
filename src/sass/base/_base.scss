@@ -71,6 +71,7 @@ ol {
     align-items: center;
     justify-content: center;
     position: relative;
+    backface-visibility: hidden;
 
     &::before,
     &::after {

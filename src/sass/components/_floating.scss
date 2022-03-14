@@ -34,8 +34,8 @@
     }
 
     &--1 {
-      left: 5%;
-      bottom: 25%;
+      left: -14rem;
+      bottom: -6rem;
 
       &::before {
         width: 50rem;
@@ -44,23 +44,22 @@
     }
 
     &--2 {
-      top: 0;
+      top: -9rem;
       left: 50%;
 
       &::before {
-        width: 60rem;
-        height: 60rem;
-        z-index: 10;
+        width: 80rem;
+        height: 80rem;
       }
     }
 
     &--3 {
-      right: 8%;
-      bottom: 30%;
+      right: -8rem;
+      bottom: 0;
 
       &::before {
-        width: 35rem;
-        height: 35rem;
+        width: 45rem;
+        height: 45rem;
       }
     }
   }

@@ -1,10 +1,20 @@
 .hero {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  position: relative;
+  min-height: calc(100vh - var(--header-height));
   overflow: hidden;
-  z-index: 10;
-  min-height: 100vh;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: inherit;
+  }
+
+  &__textbox {
+    position: relative;
+    z-index: 10;
+  }
 
   &__greet {
     display: inline-block;

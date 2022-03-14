@@ -20,17 +20,19 @@
     &:link,
     &:visited {
       display: inline-block;
-      transition: transform 300ms ease;
+      transition: var(--transition);
+      color: var(--color-primary-dark-2);
     }
 
     &:hover {
       transform: translateY(-0.8rem);
+      color: var(--color-primary);
     }
   }
 
   &__social-logo {
     width: 2.4rem;
     height: 2.4rem;
-    fill: var(--color-primary-dark-2);
+    fill: currentColor;
   }
 }
