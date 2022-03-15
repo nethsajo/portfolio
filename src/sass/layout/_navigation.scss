@@ -1,4 +1,16 @@
+%btn-placeholder {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-black-light-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation {
+  margin-left: auto;
+  padding-left: 2.4rem;
+
   &__list {
     display: flex;
     align-items: center;
@@ -47,18 +59,67 @@
   &__btn {
     width: auto;
     height: auto;
-    background-color: transparent;
     border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-black-light);
+    @extend %btn-placeholder;
   }
 
   &__icon {
     width: 2.4rem;
     height: 2.4rem;
     fill: currentColor;
+  }
+
+  &__btn-round {
+    width: 4.8rem;
+    height: 4.8rem;
+    min-width: 4.8rem;
+    min-height: 4.8rem;
+    border: 1px solid var(--color-black-light-2);
+    border-radius: var(--b-radius-rnd);
+    @extend %btn-placeholder;
+    // display: none;
+
+    & span {
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        width: 2rem;
+        height: 2px;
+        background-color: var(--color-black-light-2);
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        transition: var(--transition);
+      }
+
+      & {
+        background-color: transparent;
+      }
+
+      &::before {
+        top: -0.4rem;
+      }
+
+      &::after {
+        top: 0.4rem;
+      }
+    }
+
+    &.active span::before {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+
+    &.active span::after {
+      top: 0;
+      transform: rotate(135deg);
+    }
   }
 }
