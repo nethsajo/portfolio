@@ -23,6 +23,17 @@ body.dark {
     &__icon {
       color: var(--color-white-darkest);
     }
+
+    &__btn-round {
+      border-color: var(--color-white-darkest);
+
+      & span {
+        &::before,
+        &::after {
+          background-color: var(--color-white-darkest);
+        }
+      }
+    }
   }
 
   & .popup {

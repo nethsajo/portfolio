@@ -15,11 +15,25 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2"
+    "autoprefixer": "^10.4.2",
+    "parcel": "^2.3.2",
+    "postcss": "^8.4.8"
   },
   "dependencies": {
     "@ant-design/icons-svg": "^4.2.1",
     "core-js": "^3.21.1",
     "regenerator-runtime": "^0.13.9"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ]
+      }
+    }
   }
 }
