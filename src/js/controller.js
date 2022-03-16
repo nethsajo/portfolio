@@ -5,6 +5,7 @@ import AboutView from './Views/aboutView';
 import ProjectView from './Views/projectView';
 import ContactView from './Views/contactView';
 import ThemeView from './Views/themeView';
+import MenuView from './Views/menuView';
 
 const controlTheme = function () {
   ThemeView.setTheme();

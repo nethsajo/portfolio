@@ -4,3 +4,41 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-landscape {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-portrait {
+    @media only screen and (max-width: 62em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-small {
+    @media only screen and (max-width: 50em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == phone-sm {
+    @media only screen and (max-width: 27em) {
+      @content;
+    }
+  }
+}

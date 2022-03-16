@@ -2,6 +2,14 @@
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+
+  @include responsive(phone) {
+    max-width: 70rem;
+  }
+
+  @include responsive(phone-sm) {
+    max-width: 100rem;
+  }
 }
 
 .flex {

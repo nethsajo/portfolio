@@ -9,11 +9,17 @@
     flex-direction: column;
     justify-content: center;
     min-height: inherit;
+    position: relative;
   }
 
   &__textbox {
     position: relative;
-    z-index: 10;
+    z-index: 1;
+    pointer-events: none;
+
+    @include responsive(phone-sm) {
+      text-align: center;
+    }
   }
 
   &__greet {
@@ -35,5 +41,21 @@
   &__buttons {
     display: flex;
     align-items: center;
+
+    @include responsive(phone-sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__floating {
+    @include responsive(tab-small) {
+      display: flex;
+      margin-top: 4.8rem;
+      gap: 2.4rem;
+    }
+
+    @include responsive(phone-sm) {
+      justify-content: center;
+    }
   }
 }

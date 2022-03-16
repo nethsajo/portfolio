@@ -8,7 +8,7 @@ class AboutView extends View {
     return `
       <section class="about" id="about">
         <div class="wrapper">
-          <h2 class="heading__secondary u-c-pd u-fw-bold u-mb-lg">About.</h2>
+          <h2 class="heading__secondary u-c-pd u-fw-bold u-mb-lg">About Me.</h2>
           <div class="about__content u-mb-lg">
             <div class="about__image">
               <img

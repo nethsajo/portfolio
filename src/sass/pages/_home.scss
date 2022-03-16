@@ -7,11 +7,28 @@
     grid-template-columns: auto 1fr;
     justify-content: center;
     gap: 9.6rem 6.4rem;
+
+    @include responsive(tab-small) {
+      grid-template-columns: 1fr;
+      row-gap: 6.4rem;
+    }
   }
 
   &__photo {
     width: 100%;
     border-radius: var(--b-radius-5);
+
+    @include responsive(tab-small) {
+      height: 35rem;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    @include responsive(tab-small) {
+      grid-row: 1/2;
+      text-align: center;
+    }
   }
 
   &__description {
@@ -62,5 +79,9 @@
     line-height: 1.6;
     margin: 0 auto;
     max-width: 70%;
+
+    @include responsive(phone-sm) {
+      max-width: 100%;
+    }
   }
 }

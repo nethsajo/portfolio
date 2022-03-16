@@ -24,14 +24,38 @@ body.dark {
       color: var(--color-white-darkest);
     }
 
-    &__btn-round {
+    &__btn-menu {
       border-color: var(--color-white-darkest);
 
       & span {
+        &,
         &::before,
         &::after {
           background-color: var(--color-white-darkest);
         }
+      }
+
+      &.active span {
+        background-color: transparent;
+      }
+    }
+
+    &__mobile-menu {
+      background-color: rgba(32, 32, 32, 0.8);
+    }
+
+    &__mobile-container {
+      background-color: var(--color-black-light);
+    }
+
+    &__mobile-link {
+      &:link,
+      &:visited {
+        color: var(--color-white-dark);
+      }
+
+      &:hover {
+        color: var(--color-primary);
       }
     }
   }

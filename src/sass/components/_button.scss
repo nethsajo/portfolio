@@ -62,5 +62,10 @@
 
   &:not(:last-child) {
     margin-right: 3.2rem;
+
+    @include responsive(phone-sm) {
+      margin-right: 0;
+      margin-bottom: 3.2rem;
+    }
   }
 }

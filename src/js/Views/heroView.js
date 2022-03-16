@@ -12,23 +12,24 @@ class HeroView extends View {
       <section class="hero">
         <div class="hero__content wrapper">
           <div class="hero__textbox u-mb-md">
-            <span class="hero__greet u-mb-xs">👋 ${this._data.greetings}</span>
-            <h1 class="heading__primary u-mb-sm">${this._data.name}</h1>
+            <span class="hero__greet u-mb-xxs">👋 ${this._data.greetings}</span>
+            <h1 class="heading__primary u-mb-xs">${this._data.name}</h1>
             <h2 class="heading__secondary u-mb-sm u-fw-light">
               ${this._data.position}
             </h2>
             <p class="hero__message">
               ${this._data.description}
             </p>
-            ${this._data.floatingLinks
-              .map((links, i) => this._generateFloatingIconsMarkup(links, i))
-              .join('')}
           </div>
           <div class="hero__buttons">
             <a href="#" class="btn btn--outline btn--sm">Get in touch</a>
             <a href="#" class="btn btn--outline btn--sm">Resume</a>
           </div>
-          
+          <div class="hero__floating">
+            ${this._data.floatingLinks
+              .map((links, i) => this._generateFloatingIconsMarkup(links, i))
+              .join('')}
+          </div>
         </div>
         
       </section>

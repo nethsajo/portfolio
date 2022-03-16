@@ -7,6 +7,7 @@
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
+    max-width: 80%;
   }
 
   &__list {
@@ -15,7 +16,11 @@
     align-items: center;
     justify-content: center;
     gap: 2.4rem;
-    width: 80%;
+    max-width: 80%;
+
+    @include responsive(phone-sm) {
+      max-width: 100%;
+    }
   }
 
   &__box {

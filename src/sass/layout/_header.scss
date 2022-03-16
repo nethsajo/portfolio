@@ -28,6 +28,11 @@
     display: flex;
     align-items: center;
 
+    @include responsive(tab-small) {
+      margin-left: auto;
+      z-index: 100;
+    }
+
     & > button {
       margin-left: 4.8rem;
     }
