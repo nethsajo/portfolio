@@ -50,7 +50,7 @@
 
       @include responsive(tab-portrait) {
         left: 10%;
-        bottom: 10%;
+        bottom: -25%;
       }
 
       @include responsive(tab-small) {
@@ -70,8 +70,8 @@
     }
 
     &--2 {
-      top: 0;
-      left: 50%;
+      top: -15%;
+      left: 55%;
 
       @include responsive(tab-small) {
         top: 0;

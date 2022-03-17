@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 0 3.2rem;
 
+  @include responsive(tab-small) {
+    max-width: 80rem;
+  }
+
   @include responsive(phone) {
     max-width: 70rem;
   }

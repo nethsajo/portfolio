@@ -93,8 +93,8 @@ ol {
 
     &::before {
       content: '';
-      width: 8rem;
-      height: 8rem;
+      width: 6.4rem;
+      height: 6.4rem;
       background-color: var(--color-black);
       animation: loader 0.85s linear infinite;
     }
@@ -102,8 +102,8 @@ ol {
     &::after {
       content: '';
       position: absolute;
-      width: 14rem;
-      height: 14rem;
+      width: 9.6rem;
+      height: 9.6rem;
       background-color: var(--color-black-light);
       z-index: -1;
       animation: loader 0.8s linear infinite;
