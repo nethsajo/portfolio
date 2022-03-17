@@ -19,7 +19,7 @@ html {
     font-size: 56.25%;
   }
 
-  @include responsive(phone) {
+  @include responsive(tab-small) {
     font-size: 50%;
   }
 }

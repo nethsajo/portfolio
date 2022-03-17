@@ -15,10 +15,10 @@ class ProjectView extends View {
     const btn = e.target.closest('.projects__maximize-btn');
     if (!btn) return;
     const { id } = btn.dataset;
-    const { image } = this._data.find(image => image.id === +id);
+    const { images } = this._data.find(image => image.id === +id);
 
     this._projectBox = e.target.closest('.projects__box');
-    const markup = this._generateProjectImage(image);
+    const markup = this._generateProjectImage(images);
     this._projectBox.insertAdjacentHTML('afterbegin', markup);
   }
 
@@ -61,11 +61,19 @@ class ProjectView extends View {
     return `
       <div class="projects__box">
         <figure class="projects__img-box">
-          <img
-            src="${project.image}"
-            alt="${project.name} Photo"
-            class="projects__image"
-          />
+          <picture class="project__picture">
+            <img
+              srcset="${project.images.img640} 640w, ${
+      project.images.img828
+    } 828w, ${project.images.img1200} 1200w, ${project.images.img1920} 1920w, ${
+      project.images.img2048
+    } 2048w, ${project.images.img3840} 3840w" 
+              sizes="(max-width: 50em) 45vw, (max-width: 62em) 40vw, (max-width: 75em) 35vw, (min-width: 112.5em) 30vw"
+              src="${project.images.img1920}"
+              alt="${project.name} Photo"
+              class="projects__image"
+            />
+          </picture>
           <figcaption class="projects__caption">
             <button class="projects__maximize-btn" data-id="${project.id}">
               <svg class="projects__icon">
@@ -119,7 +127,7 @@ class ProjectView extends View {
     `;
   }
 
-  _generateProjectImage(image) {
+  _generateProjectImage(images) {
     return `
       <div class="projects__window">
         <div class="projects__window-content">
@@ -131,7 +139,14 @@ class ProjectView extends View {
             </svg>
           </button>
           <div class="projects__window-box">
-            <img src="${image}" alt="" class="projects__window-image">
+            <picture class="project__picture">
+              <img
+                srcset="${images.img640} 640w, ${images.img828} 828w, ${images.img1200} 1200w, ${images.img1920} 1920w, ${images.img2048} 2048w, ${images.img3840} 3840w" 
+                sizes="(max-width: 50em) 45vw, (max-width: 62em) 40vw, (max-width: 75em) 35vw, (min-width: 112.5em) 30vw"
+                src="${images.img1920}"
+                class="projects__window-image"
+              />
+            </picture>
           </div>
         </div>
       </div>

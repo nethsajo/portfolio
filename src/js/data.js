@@ -5,10 +5,8 @@ import {
   GithubOutlined,
 } from '@ant-design/icons-svg';
 
-import image from 'url:../images/me.jpg';
-import projectOne from 'url:../images/project-1.webp';
-import projectTwo from 'url:../images/project-2.webp';
-import projectThree from 'url:../images/project-3.webp';
+import image from 'url:../images/me-large.png';
+import projectImage from 'url:../images/projects/*.webp';
 
 export const heroData = {
   greetings: 'Hello there, I am',
@@ -98,7 +96,14 @@ export const projects = [
   {
     id: 1,
     name: 'Villa Lancaster',
-    image: projectOne,
+    images: {
+      img640: projectImage['project-1-640w'],
+      img828: projectImage['project-1-828w'],
+      img1200: projectImage['project-1-1200w'],
+      img1920: projectImage['project-1-1920w'],
+      img2048: projectImage['project-1-2048w'],
+      img3840: projectImage['project-1-3840w'],
+    },
     description:
       'A real estate landing page that you will see a list of available properties.',
     languages: ['HTML', 'SASS'],
@@ -111,7 +116,14 @@ export const projects = [
   {
     id: 2,
     name: 'Bankify',
-    image: projectTwo,
+    images: {
+      img640: projectImage['project-2-640w'],
+      img828: projectImage['project-2-828w'],
+      img1200: projectImage['project-2-1200w'],
+      img1920: projectImage['project-2-1920w'],
+      img2048: projectImage['project-2-2048w'],
+      img3840: projectImage['project-2-3840w'],
+    },
     description:
       'A digital banking landing page that you will see their services and operations.',
     languages: ['HTML', 'SASS', 'JavaScript'],
@@ -124,7 +136,14 @@ export const projects = [
   {
     id: 3,
     name: 'CookBook',
-    image: projectThree,
+    images: {
+      img640: projectImage['project-3-640w'],
+      img828: projectImage['project-3-828w'],
+      img1200: projectImage['project-3-1200w'],
+      img1920: projectImage['project-3-1920w'],
+      img2048: projectImage['project-3-2048w'],
+      img3840: projectImage['project-3-3840w'],
+    },
     description:
       "A recipe web application where you can discover recipes, cooks and how to's on the food you love.",
     languages: ['HTML', 'SASS', 'JavaScript', 'API'],

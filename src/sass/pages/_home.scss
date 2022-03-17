@@ -4,7 +4,8 @@
 
   &__content {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 35rem 1fr;
+    align-items: center;
     justify-content: center;
     gap: 9.6rem 6.4rem;
 

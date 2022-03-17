@@ -17,10 +17,12 @@
     "@parcel/transformer-sass": "^2.3.2",
     "autoprefixer": "^10.4.2",
     "parcel": "^2.3.2",
-    "postcss": "^8.4.8"
+    "postcss": "^8.4.8",
+    "sharp": "^0.29.3"
   },
   "dependencies": {
     "@ant-design/icons-svg": "^4.2.1",
+    "@parcel/resolver-glob": "^2.3.2",
     "core-js": "^3.21.1",
     "regenerator-runtime": "^0.13.9"
   },
