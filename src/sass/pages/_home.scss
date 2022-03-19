@@ -39,10 +39,10 @@
   }
 
   &__name {
-    font-size: clamp(3.2rem, 3vw, 6.4rem);
-    font-weight: 600;
+    font-size: 4.4rem;
+    font-weight: 700;
     color: var(--color-black-light-2);
-    line-height: 1.4;
+    line-height: 1.2;
     letter-spacing: 0.03rem;
   }
 
@@ -67,9 +67,9 @@
 }
 
 .contact {
-  padding: 9.6rem 0;
-  position: relative;
-  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
   &__heading {
     line-height: 1.4;

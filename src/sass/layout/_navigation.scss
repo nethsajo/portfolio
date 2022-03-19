@@ -35,6 +35,10 @@
     }
   }
 
+  &__btn {
+    font-family: inherit;
+  }
+
   &__link {
     &:link,
     &:visited {

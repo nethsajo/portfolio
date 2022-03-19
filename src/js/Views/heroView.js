@@ -14,7 +14,7 @@ class HeroView extends View {
           <div class="hero__textbox u-mb-md">
             <span class="hero__greet u-mb-xxs">👋 ${this._data.greetings}</span>
             <h1 class="heading__primary u-mb-xs">${this._data.name}</h1>
-            <h2 class="heading__secondary u-mb-sm u-fw-light">
+            <h2 class="hero__secondary u-mb-sm u-fw-light">
               ${this._data.position}
             </h2>
             <p class="hero__message">
@@ -22,7 +22,7 @@ class HeroView extends View {
             </p>
           </div>
           <div class="hero__buttons">
-            <a href="#" class="btn btn--outline btn--sm">Get in touch</a>
+            <a href="#" class="btn btn--primary btn--sm">Let's talk</a>
             <a href="#" class="btn btn--outline btn--sm">Resume</a>
           </div>
           <div class="hero__floating">

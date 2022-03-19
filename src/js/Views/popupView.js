@@ -2,24 +2,19 @@ import View from './View';
 
 class PopupView extends View {
   _parentElement = document.querySelector('.popup');
-  _navigationList = document.querySelector('.navigation__list');
+  _btnPopup = document.querySelector('.navigation__connect');
 
   constructor() {
     super();
     this._addShowHidePopup();
   }
 
-  _togglePopup(e) {
-    const click = e.target.closest('.navigation__connect');
-    if (!click) return;
+  _togglePopup() {
     this._parentElement.classList.toggle('active');
   }
 
   _addShowHidePopup() {
-    this._navigationList.addEventListener(
-      'click',
-      this._togglePopup.bind(this)
-    );
+    this._btnPopup.addEventListener('click', this._togglePopup.bind(this));
   }
 
   _generateMarkup() {

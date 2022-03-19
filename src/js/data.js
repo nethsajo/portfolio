@@ -5,7 +5,8 @@ import {
   GithubOutlined,
 } from '@ant-design/icons-svg';
 
-import image from 'url:../images/me-large.png';
+import meSmall from 'url:../images/me-small.png';
+import meLarge from 'url:../images/me-large.png';
 import projectImage from 'url:../images/projects/*.webp';
 
 export const heroData = {
@@ -57,7 +58,10 @@ export const popupLinks = [
 export const aboutData = {
   name: 'Jan Kenneth Sajo',
   position: 'Front-end Developer',
-  image,
+  image: {
+    large: meLarge,
+    small: meSmall,
+  },
   techStacks: [
     {
       id: 'html',

@@ -11,7 +11,7 @@ body {
 }
 
 .heading__primary {
-  font-size: clamp(2.4rem, 8vw, 9.6rem);
+  font-size: clamp(4.4rem, 8vw, 9.6rem);
   font-weight: 700;
   line-height: 1.2;
   @include gradient(var(--color-primary), var(--color-primary-dark));

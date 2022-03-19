@@ -47,4 +47,11 @@
       @content;
     }
   }
+
+  @if $breakpoint == phone-xs {
+    //320px
+    @media only screen and (max-width: 20em) {
+      @content;
+    }
+  }
 }
