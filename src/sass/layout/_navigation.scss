@@ -140,10 +140,10 @@
   }
 
   &__btn-menu {
-    width: 4.8rem;
-    height: 4.8rem;
-    min-width: 4.8rem;
-    min-height: 4.8rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    min-width: 3.2rem;
+    min-height: 3.2rem;
     border: none;
     display: none;
     @extend %btn-placeholder;
@@ -173,17 +173,17 @@
       }
 
       & {
-        width: 2.6rem;
+        width: 3.2rem;
       }
 
       &::before {
-        width: 3rem;
-        top: -0.8rem;
+        width: 3.8rem;
+        top: -0.9rem;
       }
 
       &::after {
-        width: 2rem;
-        top: 0.8rem;
+        width: 2.5rem;
+        top: 0.9rem;
       }
     }
 
@@ -199,7 +199,7 @@
     &.active span::after {
       top: 0;
       transform: rotate(135deg);
-      width: 3rem;
+      width: 3.8rem;
     }
   }
 }

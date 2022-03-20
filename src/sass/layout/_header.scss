@@ -13,13 +13,15 @@
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 128rem;
+    max-width: 120rem;
     margin: 0 auto;
     height: 100%;
   }
 
   &__logo {
-    height: 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
   }
 
   &__btns {

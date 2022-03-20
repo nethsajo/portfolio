@@ -12,16 +12,20 @@ class HeroView extends View {
       <section class="hero">
         <div class="hero__content wrapper">
           <div class="hero__textbox u-mb-md">
-            <span class="hero__greet u-mb-xxs">👋 ${this._data.greetings}</span>
-            <h1 class="heading__primary u-mb-xs">${this._data.name}</h1>
-            <h2 class="hero__secondary u-mb-sm u-fw-light">
+            <span class="hero__greet u-mb-xxs" data-aos="fade-up" data-aos-delay="100">👋 ${
+              this._data.greetings
+            }</span>
+            <h1 class="heading__primary u-mb-xs" data-aos="fade-up" data-aos-delay="200">${
+              this._data.name
+            }</h1>
+            <h2 class="hero__secondary u-mb-sm u-fw-light" data-aos="fade-up" data-aos-delay="400">
               ${this._data.position}
             </h2>
-            <p class="hero__message">
+            <p class="hero__message" data-aos="fade-up" data-aos-delay="600">
               ${this._data.description}
             </p>
           </div>
-          <div class="hero__buttons">
+          <div class="hero__buttons" data-aos="fade-up" data-aos-delay="700">
             <a href="#" class="btn btn--primary btn--sm">Let's talk</a>
             <a href="#" class="btn btn--outline btn--sm">Resume</a>
           </div>
@@ -37,15 +41,17 @@ class HeroView extends View {
   }
 
   _generateFloatingIconsMarkup(links, i) {
-    const { icon, link } = links;
+    const { icon, link, id } = links;
     const svg = this.renderSVG(icon, 'floating__icon');
 
     return `
       <a
         href="${link}"
-        aria-label="github"
+        aria-label="${id}"
         target="_blank"
-        class="floating floating__item--${i + 1}"
+        class="floating floating__item--${i + 1}" 
+        data-aos="zoom-in-up" 
+        data-aos-delay="${(i + 1) * 500}"
       >
         <span class="floating__item">
           ${svg}

@@ -23,6 +23,7 @@
     "@ant-design/icons-svg": "^4.2.1",
     "@parcel/resolver-glob": "^2.3.2",
     "@parcel/transformer-image": "^2.3.2",
+    "aos": "^2.3.4",
     "core-js": "^3.21.1",
     "parcel": "^2.3.2",
     "regenerator-runtime": "^0.13.9"

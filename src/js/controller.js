@@ -6,6 +6,7 @@ import ProjectView from './Views/projectView';
 import ContactView from './Views/contactView';
 import ThemeView from './Views/themeView';
 import MenuView from './Views/menuView';
+import GlobalView from './Views/globalView';
 
 const controlTheme = function () {
   ThemeView.setTheme();
@@ -22,22 +23,3 @@ const init = function () {
 };
 
 init();
-
-window.addEventListener('load', function () {
-  setTimeout(() => {
-    const loader = document.querySelector('.loader');
-    loader.classList.add('hidden');
-    document.body.style.overflow = 'visible';
-  }, 500);
-});
-
-let prevScrollpos = window.pageYOffset;
-window.addEventListener('scroll', function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.header').style.top = '0';
-  } else {
-    document.querySelector('.header').style.top = '-8rem';
-  }
-  prevScrollpos = currentScrollPos;
-});

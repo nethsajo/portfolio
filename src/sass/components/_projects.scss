@@ -1,7 +1,7 @@
 .projects {
   padding: 8rem 0;
 
-  &__container {
+  &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
