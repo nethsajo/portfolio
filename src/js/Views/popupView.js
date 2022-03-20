@@ -1,28 +1,33 @@
 import View from './View';
 
 class PopupView extends View {
-  _parentElement = document.querySelector('.popup');
+  _parentElement = document.querySelector('.popup__list');
+  _window = document.querySelector('.popup');
   _btnPopup = document.querySelector('.navigation__connect');
 
   constructor() {
     super();
-    this._addShowHidePopup();
+    this._addShowPopup();
+    this._addHandlerPopup();
   }
 
   _togglePopup() {
-    this._parentElement.classList.toggle('active');
+    this._window.classList.toggle('active');
   }
 
-  _addShowHidePopup() {
+  _addShowPopup() {
     this._btnPopup.addEventListener('click', this._togglePopup.bind(this));
   }
 
+  _addHandlerPopup() {
+    this._parentElement.addEventListener('click', function (e) {
+      e.stopImmediatePropagation();
+      document.querySelector('.popup').classList.toggle('active');
+    });
+  }
+
   _generateMarkup() {
-    return `
-      <ul class="popup__list">
-        ${this._data.map(links => this._generatePopupLinks(links)).join('')}
-      </ul>
-    `;
+    return this._data.map(links => this._generatePopupLinks(links)).join('');
   }
 
   _generatePopupLinks(links) {

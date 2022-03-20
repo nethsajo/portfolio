@@ -39,6 +39,13 @@
     font-family: inherit;
   }
 
+  &__inline {
+    cursor: pointer;
+    font-size: 1.4rem;
+    position: relative;
+    @extend %link-placeholder;
+  }
+
   &__link {
     &:link,
     &:visited {

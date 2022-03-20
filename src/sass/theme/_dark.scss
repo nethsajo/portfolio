@@ -20,6 +20,14 @@ body.dark {
       }
     }
 
+    &__inline {
+      color: var(--color-white-darkest);
+
+      &:hover {
+        color: var(--color-primary-light);
+      }
+    }
+
     &__icon {
       color: var(--color-white-darkest);
     }
