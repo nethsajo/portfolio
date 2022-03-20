@@ -16,7 +16,7 @@ class AboutView extends View {
                   src="${this._data.image.large}"
                   srcset="${this._data.image.small} 210w, ${
       this._data.image.large
-    } 360w" sizes="(max-width: 37.5em) 85vw, (min-width: 50em) 30vw"
+    } 360w" sizes="(max-width: 37.5em) 35vw, (min-width: 50em) 30vw"
                   alt="${this._data.name}"
                   class="about__photo"
                 />

@@ -8,6 +8,7 @@ class PopupView extends View {
   constructor() {
     super();
     this._addShowPopup();
+    this._addHandlerHidePopupScroll();
     this._addHandlerPopup();
   }
 
@@ -23,6 +24,15 @@ class PopupView extends View {
     this._parentElement.addEventListener('click', function (e) {
       e.stopImmediatePropagation();
       document.querySelector('.popup').classList.toggle('active');
+    });
+  }
+
+  _addHandlerHidePopupScroll() {
+    window.addEventListener('scroll', function () {
+      const popupSocial = document.querySelector('#popup__social');
+      if (popupSocial.classList.contains('active')) {
+        popupSocial.classList.remove('active');
+      }
     });
   }
 
