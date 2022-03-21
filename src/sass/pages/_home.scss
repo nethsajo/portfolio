@@ -3,15 +3,40 @@
   padding: 9.6rem 0;
 
   &__content {
-    display: grid;
-    grid-template-columns: 35rem 1fr;
+    display: flex;
     align-items: center;
-    justify-content: center;
     gap: 9.6rem 6.4rem;
 
     @include responsive(tab-small) {
-      grid-template-columns: 1fr;
-      row-gap: 6.4rem;
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    @include responsive(tab-small) {
+      order: 1;
+      width: 50%;
+    }
+
+    &::before,
+    &::after {
+      content: url('../icons/dots-mobile.svg');
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before {
+      top: -2.5rem;
+      left: -5rem;
+    }
+
+    &::after {
+      bottom: -5rem;
+      right: -2.5rem;
     }
   }
 
@@ -20,14 +45,12 @@
     border-radius: var(--b-radius-5);
 
     @include responsive(tab-small) {
-      height: 35rem;
-      object-fit: contain;
     }
   }
 
   &__info {
+    padding: 0 1.5rem;
     @include responsive(tab-small) {
-      grid-row: 1/2;
       text-align: center;
     }
   }
@@ -67,17 +90,47 @@
 }
 
 .contact {
-  padding: 9.6rem 0;
+  padding: 14rem 0 15rem;
+  margin: 12rem 0 14rem;
   height: calc(100vh - (9.6rem));
   display: flex;
   align-items: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: url('../icons/dots-4.svg');
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::before {
+    top: -3rem;
+
+    @include responsive(tab-small) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    bottom: -3rem;
+
+    @include responsive(tab-small) {
+      bottom: 0;
+    }
+  }
 
   &__heading {
-    line-height: 1.4;
+    font-size: clamp(3.2rem, 9vw, 5.6rem);
+    color: var(--color-grey-light);
+    line-height: 1.3;
+    letter-spacing: -0.25rem;
   }
 
   &__message {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.6;
     margin: 0 auto;
     max-width: 70%;

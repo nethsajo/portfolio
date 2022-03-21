@@ -8,8 +8,8 @@ class AboutView extends View {
     return `
       <section class="about" id="about">
         <div class="wrapper">
-          <h2 class="heading__secondary u-c-pd u-fw-bold u-mb-lg" data-aos="fade-up" data-aos-delay="0">About Me.</h2>
-          <div class="about__content u-mb-lg">
+          <h2 class="heading__secondary u-c-pd u-fw-bold u-mb-lg" data-aos="fade-up" data-aos-delay="400">About.</h2>
+          <div class="about__content u-mb-xl">
             <div class="about__image" data-aos="fade-up" data-aos-delay="300">
               <picture class="about__picture">
                 <img

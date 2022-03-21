@@ -6,7 +6,6 @@
   color: var(--color-black-light-2);
   margin-right: 1rem;
   transition: var(--transition);
-  height: 5rem;
 
   &::before {
     content: '';
@@ -35,6 +34,7 @@
     width: 2.4rem;
     height: 2.4rem;
     fill: currentColor;
+    transition: var(--transition);
   }
 
   &--no-transform {

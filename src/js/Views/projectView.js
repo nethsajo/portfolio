@@ -46,7 +46,7 @@ class ProjectView extends View {
     return `
       <section class="projects" id="projects">
         <div class="wrapper">
-          <h2 class="heading__secondary u-fw-bold u-mb-lg" data-aos="fade-up" data-aos-delay="300">Projects.</h2>
+          <h2 class="heading__secondary u-fw-bold u-mb-lg" data-aos="fade-up" data-aos-delay="400">Projects.</h2>
           <div class="projects__grid">
             ${this._data
               .map((project, i) => this._generateMarkupProjects(project, i))

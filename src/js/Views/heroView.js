@@ -5,6 +5,20 @@ class HeroView extends View {
 
   constructor() {
     super();
+    this._addHandlerScrollCTA();
+  }
+
+  _addHandlerScrollCTA() {
+    this._parentElement.addEventListener('click', function (e) {
+      e.preventDefault();
+      const btnCTA = e.target.closest('.btn__cta');
+      if (!btnCTA) return;
+
+      const id = btnCTA.getAttribute('href');
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+      });
+    });
   }
 
   _generateMarkup() {
@@ -15,7 +29,7 @@ class HeroView extends View {
             <span class="hero__greet u-mb-xxs" data-aos="fade-up" data-aos-delay="100">👋 ${
               this._data.greetings
             }</span>
-            <h1 class="heading__primary u-mb-xs" data-aos="fade-up" data-aos-delay="200">${
+            <h1 class="heading__primary u-mb-xs u-o-hidden" data-aos="fade-up" data-aos-delay="200">${
               this._data.name
             }</h1>
             <h2 class="hero__secondary u-mb-sm u-fw-light" data-aos="fade-up" data-aos-delay="400">
@@ -26,7 +40,7 @@ class HeroView extends View {
             </p>
           </div>
           <div class="hero__buttons" data-aos="fade-up" data-aos-delay="700">
-            <a href="#" class="btn btn--primary btn--sm">Let's talk</a>
+            <a href="#contact" class="btn btn--primary btn--sm btn__cta">Let's talk</a>
             <a href="#" class="btn btn--outline btn--sm">Resume</a>
           </div>
           <div class="hero__floating">
@@ -35,7 +49,6 @@ class HeroView extends View {
               .join('')}
           </div>
         </div>
-        
       </section>
     `;
   }

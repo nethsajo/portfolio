@@ -7,7 +7,7 @@ class ContactView extends View {
     return `
       <section class="contact" id="contact">
         <div class="wrapper u-t-center">
-          <h2 class="contact__heading heading__secondary u-fw-bold u-mb-md" data-aos="fade-up" data-aos-delay="400">
+          <h2 class="contact__heading u-fw-bold u-mb-md" data-aos="fade-up" data-aos-delay="400">
             ${this._data.heading}
             <span class="u-c-gc">you.</span>
           </h2>
