@@ -19,24 +19,25 @@
 
     @include responsive(tab-small) {
       order: 1;
-      width: 50%;
+      width: 80%;
     }
 
     &::before,
     &::after {
       position: absolute;
+      display: block;
       z-index: -1;
     }
 
     &::before {
       content: url('../icons/dots-spikes.svg');
       top: -2.5rem;
-      left: -5rem;
+      left: -3.5rem;
     }
 
     &::after {
       content: url('../icons/dots-mobile.svg');
-      bottom: -5rem;
+      bottom: -3rem;
       right: -2.5rem;
     }
   }
@@ -44,9 +45,6 @@
   &__photo {
     width: 100%;
     border-radius: var(--b-radius-5);
-
-    @include responsive(tab-small) {
-    }
   }
 
   &__info {
@@ -111,7 +109,7 @@
     top: -3rem;
 
     @include responsive(tab-small) {
-      top: 0;
+      top: -1rem;
     }
   }
 
@@ -119,7 +117,7 @@
     bottom: -3rem;
 
     @include responsive(tab-small) {
-      bottom: 0;
+      bottom: -1rem;
     }
   }
 
