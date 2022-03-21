@@ -24,17 +24,18 @@
 
     &::before,
     &::after {
-      content: url('../icons/dots-mobile.svg');
       position: absolute;
       z-index: -1;
     }
 
     &::before {
+      content: url('../icons/dots-spikes.svg');
       top: -2.5rem;
       left: -5rem;
     }
 
     &::after {
+      content: url('../icons/dots-mobile.svg');
       bottom: -5rem;
       right: -2.5rem;
     }

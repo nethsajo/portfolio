@@ -14,7 +14,9 @@
   "author": "Jan Kenneth Sajo",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.3.2",
     "@parcel/transformer-sass": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.8",
     "sharp": "^0.29.3"
