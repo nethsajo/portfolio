@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "parcel build public/index.html --dist-dir ./build"
+    "build": "parcel build public/index.html --dist-dir ./dist"
   },
   "author": "Jan Kenneth Sajo",
   "license": "ISC",
