@@ -23,7 +23,7 @@
     }
 
     @include responsive(phone-sm) {
-      width: 65%;
+      width: 80%;
     }
 
     &::before,
@@ -65,11 +65,11 @@
   }
 
   &__name {
-    font-size: 4.4rem;
+    font-size: clamp(3.2rem, 7vw, 4.4rem);
     font-weight: 700;
     color: var(--color-black-light-2);
     line-height: 1.2;
-    letter-spacing: 0.03rem;
+    letter-spacing: -0.15rem;
   }
 
   &__position {

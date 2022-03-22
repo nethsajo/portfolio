@@ -26,7 +26,7 @@ class AboutView extends View {
               <h2 class="about__name u-mb-xs u-t-uppercase" data-aos="fade-up" data-aos-delay="400">${
                 this._data.name
               }</h2>
-              <span class="about__position u-mb-sm" data-aos="fade-up" data-aos-delay="500">${
+              <span class="about__position u-mb-md" data-aos="fade-up" data-aos-delay="500">${
                 this._data.position
               }</span>
               <p class="about__description" data-aos="fade-up" data-aos-delay="600">
