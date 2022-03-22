@@ -19,7 +19,11 @@
 
     @include responsive(tab-small) {
       order: 1;
-      width: 80%;
+      width: 50%;
+    }
+
+    @include responsive(phone-sm) {
+      width: 65%;
     }
 
     &::before,
@@ -91,7 +95,6 @@
 .contact {
   padding: 14rem 0 15rem;
   margin: 12rem 0 14rem;
-  height: calc(100vh - (9.6rem));
   display: flex;
   align-items: center;
   position: relative;
@@ -107,18 +110,10 @@
 
   &::before {
     top: -3rem;
-
-    @include responsive(tab-small) {
-      top: -1rem;
-    }
   }
 
   &::after {
     bottom: -3rem;
-
-    @include responsive(tab-small) {
-      bottom: -1rem;
-    }
   }
 
   &__heading {

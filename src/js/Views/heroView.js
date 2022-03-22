@@ -10,14 +10,15 @@ class HeroView extends View {
 
   _addHandlerScrollCTA() {
     this._parentElement.addEventListener('click', function (e) {
-      e.preventDefault();
       const btnCTA = e.target.closest('.btn__cta');
-      if (!btnCTA) return;
 
-      const id = btnCTA.getAttribute('href');
-      document.querySelector(id).scrollIntoView({
-        behavior: 'smooth',
-      });
+      if (btnCTA) {
+        e.preventDefault();
+        const id = btnCTA.getAttribute('href');
+        document.querySelector(id).scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
     });
   }
 
