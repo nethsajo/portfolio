@@ -79,11 +79,11 @@
   }
 
   &:not(:last-child) {
-    margin-right: 3.2rem;
+    margin-right: 2.4rem;
 
     @include responsive(phone-xs) {
       margin-right: 0;
-      margin-bottom: 3.2rem;
+      margin-bottom: 2.4rem;
     }
   }
 }
