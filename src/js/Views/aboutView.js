@@ -11,16 +11,14 @@ class AboutView extends View {
           <h2 class="heading__secondary u-c-pd u-fw-bold u-mb-lg" data-aos="fade-up" data-aos-delay="400">About.</h2>
           <div class="about__content u-mb-xl">
             <div class="about__image" data-aos="fade-up" data-aos-delay="300">
-              <picture class="about__picture">
-                <img
-                  src="${this._data.image.large}"
-                  srcset="${this._data.image.small} 210w, ${
+              <img
+                src="${this._data.image.large}"
+                srcset="${this._data.image.small} 210w, ${
       this._data.image.large
     } 360w" sizes="(max-width: 37.5em) 35vw, (min-width: 50em) 30vw"
-                  alt="${this._data.name}"
-                  class="about__photo"
-                />
-              </picture>
+                alt="${this._data.name}"
+                class="about__photo"
+              />
             </div>
             <div class="about__info">
               <h2 class="about__name u-mb-xs u-t-uppercase" data-aos="fade-up" data-aos-delay="400">${

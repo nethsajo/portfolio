@@ -56,7 +56,7 @@ export const popupLinks = [
 ];
 
 export const aboutData = {
-  name: 'Jan Kenneth Sajo',
+  name: 'Jan Kenneth V. Sajo',
   position: 'Front-end Developer',
   image: {
     large: meLarge,

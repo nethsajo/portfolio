@@ -4,7 +4,7 @@
   align-items: center;
 
   &__description {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     max-width: 80%;
@@ -32,7 +32,7 @@
     align-items: center;
     border: 1px solid var(--color-primary-dark);
     padding: 1rem 2.4rem;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 500;
     border-radius: var(--b-radius-3);
     min-height: 5rem;
