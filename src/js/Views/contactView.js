@@ -6,8 +6,8 @@ class ContactView extends View {
   _generateMarkup() {
     return `
       <section class="contact" id="contact">
-        <div class="wrapper">
-          <div class="contact__content u-t-center">
+        <div class="contact__content wrapper u-relative">
+          <div class="u-t-center">
             <h2 class="contact__heading u-fw-bold u-mb-md" data-aos="fade-up" data-aos-delay="400">
             ${this._data.heading}
             <span class="u-c-gc">you.</span>

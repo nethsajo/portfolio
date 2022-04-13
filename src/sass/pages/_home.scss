@@ -60,25 +60,28 @@
   }
 
   &__name {
-    font-size: 4.8rem;
+    font-size: 4.4rem;
     font-weight: 700;
     color: var(--color-black-light-2);
     line-height: 1.2;
-    letter-spacing: -0.15rem;
+    letter-spacing: 0.1rem;
   }
 
   &__position {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: 0.4rem 0.8rem;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 0.3rem;
+    border-radius: 2px;
   }
 
   &__description {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.6;
 
     &:not(:last-child) {
@@ -92,23 +95,25 @@
   margin: 12rem 0 14rem;
   display: flex;
   align-items: center;
-  position: relative;
+  height: 100vh;
 
-  &::before,
-  &::after {
-    content: url('../icons/dots-4.svg');
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  &__content {
+    &::before,
+    &::after {
+      content: url('../icons/dots-4.svg');
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  &::before {
-    top: -3rem;
-  }
+    &::before {
+      top: -18rem;
+    }
 
-  &::after {
-    bottom: -3rem;
+    &::after {
+      bottom: -18rem;
+    }
   }
 
   &__heading {
@@ -119,7 +124,7 @@
   }
 
   &__message {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.6;
     margin: 0 auto;
     max-width: 70%;

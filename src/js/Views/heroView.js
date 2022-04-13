@@ -33,7 +33,7 @@ class HeroView extends View {
             <h1 class="heading__primary u-mb-xs u-o-hidden" data-aos="fade-up" data-aos-delay="200">${
               this._data.name
             }</h1>
-            <h2 class="hero__secondary u-mb-sm u-fw-light" data-aos="fade-up" data-aos-delay="400">
+            <h2 class="hero__secondary u-mb-sm" data-aos="fade-up" data-aos-delay="400">
               ${this._data.position}
             </h2>
             <p class="hero__message" data-aos="fade-up" data-aos-delay="600">

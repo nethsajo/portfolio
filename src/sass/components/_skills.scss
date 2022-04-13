@@ -4,10 +4,9 @@
   align-items: center;
 
   &__description {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1.6rem;
     line-height: 1.6;
-    max-width: 80%;
+    max-width: 60%;
 
     @include responsive(phone-sm) {
       max-width: 100%;

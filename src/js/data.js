@@ -7,7 +7,6 @@ import {
 
 import meSmall from 'url:../images/me-small.png';
 import meLarge from 'url:../images/me-large.png';
-import projectImage from 'url:../images/projects/*.webp';
 
 export const heroData = {
   greetings: 'Hello there, I am',
@@ -101,12 +100,30 @@ export const projects = [
     id: 1,
     name: 'Villa Lancaster',
     images: {
-      img640: projectImage['project-1-640w'],
-      img828: projectImage['project-1-828w'],
-      img1200: projectImage['project-1-1200w'],
-      img1920: projectImage['project-1-1920w'],
-      img2048: projectImage['project-1-2048w'],
-      img3840: projectImage['project-1-3840w'],
+      img640: new URL(
+        `../images/projects/project-1.webp?width=640`,
+        import.meta.url
+      ),
+      img828: new URL(
+        `../images/projects/project-1.webp?width=828`,
+        import.meta.url
+      ),
+      img1200: new URL(
+        `../images/projects/project-1.webp?width=1200`,
+        import.meta.url
+      ),
+      img1920: new URL(
+        `../images/projects/project-1.webp?width=1920`,
+        import.meta.url
+      ),
+      img2048: new URL(
+        `../images/projects/project-1.webp?width=2048`,
+        import.meta.url
+      ),
+      img3840: new URL(
+        `../images/projects/project-1.webp?width=3840`,
+        import.meta.url
+      ),
     },
     description:
       'A real estate landing page that you will see a list of available properties.',
@@ -121,12 +138,30 @@ export const projects = [
     id: 2,
     name: 'Bankify',
     images: {
-      img640: projectImage['project-2-640w'],
-      img828: projectImage['project-2-828w'],
-      img1200: projectImage['project-2-1200w'],
-      img1920: projectImage['project-2-1920w'],
-      img2048: projectImage['project-2-2048w'],
-      img3840: projectImage['project-2-3840w'],
+      img640: new URL(
+        `../images/projects/project-2.webp?width=640`,
+        import.meta.url
+      ),
+      img828: new URL(
+        `../images/projects/project-2.webp?width=828`,
+        import.meta.url
+      ),
+      img1200: new URL(
+        `../images/projects/project-2.webp?width=1200`,
+        import.meta.url
+      ),
+      img1920: new URL(
+        `../images/projects/project-2.webp?width=1920`,
+        import.meta.url
+      ),
+      img2048: new URL(
+        `../images/projects/project-2.webp?width=2048`,
+        import.meta.url
+      ),
+      img3840: new URL(
+        `../images/projects/project-2.webp?width=3840`,
+        import.meta.url
+      ),
     },
     description:
       'A digital banking landing page that you will see their services and operations.',
@@ -141,12 +176,30 @@ export const projects = [
     id: 3,
     name: 'CookBook',
     images: {
-      img640: projectImage['project-3-640w'],
-      img828: projectImage['project-3-828w'],
-      img1200: projectImage['project-3-1200w'],
-      img1920: projectImage['project-3-1920w'],
-      img2048: projectImage['project-3-2048w'],
-      img3840: projectImage['project-3-3840w'],
+      img640: new URL(
+        `../images/projects/project-3.webp?width=640`,
+        import.meta.url
+      ),
+      img828: new URL(
+        `../images/projects/project-3.webp?width=828`,
+        import.meta.url
+      ),
+      img1200: new URL(
+        `../images/projects/project-3.webp?width=1200`,
+        import.meta.url
+      ),
+      img1920: new URL(
+        `../images/projects/project-3.webp?width=1920`,
+        import.meta.url
+      ),
+      img2048: new URL(
+        `../images/projects/project-3.webp?width=2048`,
+        import.meta.url
+      ),
+      img3840: new URL(
+        `../images/projects/project-3.webp?width=3840`,
+        import.meta.url
+      ),
     },
     description:
       "A recipe web application where you can discover recipes, cooks and how to's on the food you love.",

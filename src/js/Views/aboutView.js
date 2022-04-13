@@ -30,13 +30,8 @@ class AboutView extends View {
               <p class="about__description" data-aos="fade-up" data-aos-delay="600">
                 Hello! My friends call me Neth. I am a degree holder of Bachelor
                 of Science in Information Technology, graduated from Lyceum of
-                Alabang. My main focus are to enhance my web development skills
-                and building interactive websites.
-              </p>
-              <p class="about__description" data-aos="fade-up" data-aos-delay="700">
-                I am a passionate and pursuing web development. I have fond of
-                creating beautiful and responsive layouts. I'm also interested
-                in designing and photography.
+                Alabang. I am a passionate and pursuing web developer. I have fond of
+                creating beautiful and responsive layouts.
               </p>
               <p class="about__description" data-aos="fade-up" data-aos-delay="800">
                 Currently, I mostly work on personal projects and focuses more
