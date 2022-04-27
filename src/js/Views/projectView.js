@@ -69,8 +69,9 @@ class ProjectView extends View {
       project.images.img828
     } 828w, ${project.images.img1200} 1200w, ${project.images.img1920} 1920w, ${
       project.images.img2048
-    } 2048w, ${project.images.img3840} 3840w" 
-                  sizes="(max-width: 50em) 45vw, (max-width: 62em) 40vw, (max-width: 75em) 35vw, (min-width: 112.5em) 30vw"
+    } 2048w, ${
+      project.images.img3840
+    } 3840w" sizes="(max-width: 50em) 45vw, (max-width: 62em) 40vw, (max-width: 75em) 35vw, (min-width: 112.5em) 30vw"
                   src="${project.images.img1920}"
                   alt="${project.name} Photo"
                   class="projects__image"
@@ -143,10 +144,9 @@ class ProjectView extends View {
             </svg>
           </button>
           <div class="projects__window-box">
-            <picture class="project__picture">
+            <picture class="projects__window-picture">
               <img
-                srcset="${images.img640} 640w, ${images.img828} 828w, ${images.img1200} 1200w, ${images.img1920} 1920w, ${images.img2048} 2048w, ${images.img3840} 3840w" 
-                sizes="(max-width: 50em) 45vw, (max-width: 62em) 40vw, (max-width: 75em) 35vw, (min-width: 112.5em) 30vw"
+                srcset="${images.img640} 640w, ${images.img828} 828w, ${images.img1200} 1200w, ${images.img1920} 1920w, ${images.img2048} 2048w, ${images.img3840} 3840w" sizes="(max-width: 50em) 45vw, (max-width: 62em) 40vw, (max-width: 75em) 35vw, (min-width: 112.5em) 30vw"
                 src="${images.img1920}"
                 class="projects__window-image"
               />

@@ -43,7 +43,7 @@
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.8;
-    max-width: 65%;
+    max-width: 75rem;
 
     @include responsive(phone-sm) {
       max-width: 100%;

@@ -78,6 +78,11 @@ export const aboutData = {
       svg: 'icon-sass',
     },
     {
+      id: 'tailwind',
+      name: 'tailwind css',
+      svg: 'icon-tailwind',
+    },
+    {
       id: 'js',
       name: 'javascript',
       svg: 'icon-javascript',
@@ -207,6 +212,44 @@ export const projects = [
     links: {
       github: 'https://github.com/nethsajo/cookbook',
       live: 'https://cookbook-js.netlify.app/',
+    },
+    type: 'Website Application',
+  },
+  {
+    id: 4,
+    name: 'Cozy',
+    images: {
+      img640: new URL(
+        `../images/projects/project-4.webp?width=640`,
+        import.meta.url
+      ),
+      img828: new URL(
+        `../images/projects/project-4.webp?width=828`,
+        import.meta.url
+      ),
+      img1200: new URL(
+        `../images/projects/project-4.webp?width=1200`,
+        import.meta.url
+      ),
+      img1920: new URL(
+        `../images/projects/project-4.webp?width=1920`,
+        import.meta.url
+      ),
+      img2048: new URL(
+        `../images/projects/project-4.webp?width=2048`,
+        import.meta.url
+      ),
+      img3840: new URL(
+        `../images/projects/project-4.webp?width=3840`,
+        import.meta.url
+      ),
+    },
+    description:
+      'A shopping web application where you can browse and shop furnitures.',
+    languages: ['HTML', 'Tailwind', 'JavaScript', 'API'],
+    links: {
+      github: 'https://github.com/nethsajo/cozy-store',
+      live: 'https://cozystore.vercel.app/',
     },
     type: 'Website Application',
   },

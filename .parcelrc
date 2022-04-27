@@ -5,5 +5,8 @@
   "resolvers": [
     "@parcel/resolver-glob",
     "..."
-  ]
+  ],
+  "optimizers": {
+    "*.{jpg,jpeg,png}": []
+  }
 }

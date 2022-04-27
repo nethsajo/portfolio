@@ -1,1 +1,73 @@
-<svg width="173" height="172" viewBox="0 0 173 172" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 2a2 2 0 11-4 0 2 2 0 014 0zM28 2a2 2 0 11-4 0 2 2 0 014 0zM52 2a2 2 0 11-4 0 2 2 0 014 0zM76 2a2 2 0 11-4 0 2 2 0 014 0zM100 2a2 2 0 11-4 0 2 2 0 014 0zM124 2a2 2 0 11-4 0 2 2 0 014 0zM148 2a2 2 0 11-4 0 2 2 0 014 0zM172 2a2 2 0 11-4 0 2 2 0 014 0zM4 26a2 2 0 11-4 0 2 2 0 014 0zM28 26a2 2 0 11-4 0 2 2 0 014 0zM52 26a2 2 0 11-4 0 2 2 0 014 0zM76 26a2 2 0 11-4 0 2 2 0 014 0zM100 26a2 2 0 11-4 0 2 2 0 014 0zM124 26a2 2 0 11-4 0 2 2 0 014 0zM148 26a2 2 0 11-4 0 2 2 0 014 0zM172 26a2 2 0 11-4 0 2 2 0 014 0zM4 50a2 2 0 11-4 0 2 2 0 014 0zM28 50a2 2 0 11-4 0 2 2 0 014 0zM52 50a2 2 0 11-4 0 2 2 0 014 0zM76 50a2 2 0 11-4 0 2 2 0 014 0zM100 50a2 2 0 11-4 0 2 2 0 014 0zM124 50a2 2 0 11-4 0 2 2 0 014 0zM148 50a2 2 0 11-4 0 2 2 0 014 0zM172 50a2 2 0 11-4 0 2 2 0 014 0zM4 74a2 2 0 11-4 0 2 2 0 014 0zM28 74a2 2 0 11-4 0 2 2 0 014 0zM52 74a2 2 0 11-4 0 2 2 0 014 0zM76 74a2 2 0 11-4 0 2 2 0 014 0zM100 74a2 2 0 11-4 0 2 2 0 014 0zM124 74a2 2 0 11-4 0 2 2 0 014 0zM148 74a2 2 0 11-4 0 2 2 0 014 0zM172 74a2 2 0 11-4 0 2 2 0 014 0zM4 98a2 2 0 11-4 0 2 2 0 014 0zM28 98a2 2 0 11-4 0 2 2 0 014 0zM52 98a2 2 0 11-4 0 2 2 0 014 0zM76 98a2 2 0 11-4 0 2 2 0 014 0zM100 98a2 2 0 11-4 0 2 2 0 014 0zM124 98a2 2 0 11-4 0 2 2 0 014 0zM148 98a2 2 0 11-4 0 2 2 0 014 0zM172 98a2 2 0 11-4 0 2 2 0 014 0zM4 122a2 2 0 11-4 0 2 2 0 014 0zM28 122a2 2 0 11-4 0 2 2 0 014 0zM52 122a2 2 0 11-4 0 2 2 0 014 0zM76 122a2 2 0 11-4 0 2 2 0 014 0zM100 122a2 2 0 11-4 0 2 2 0 014 0zM124 122a2 2 0 11-4 0 2 2 0 014 0zM148 122a2 2 0 11-4 0 2 2 0 014 0zM172 122a2 2 0 11-4 0 2 2 0 014 0zM4 146a2 2 0 11-4 0 2 2 0 014 0zM28 146a2 2 0 11-4 0 2 2 0 014 0zM52 146a2 2 0 11-4 0 2 2 0 014 0zM76 146a2 2 0 11-4 0 2 2 0 014 0zM100 146a2 2 0 11-4 0 2 2 0 014 0zM124 146a2 2 0 11-4 0 2 2 0 014 0zM148 146a2 2 0 11-4 0 2 2 0 014 0zM172 146a2 2 0 11-4 0 2 2 0 014 0zM4 170a2 2 0 11-4 0 2 2 0 014 0zM28 170a2 2 0 11-4 0 2 2 0 014 0zM52 170a2 2 0 11-4 0 2 2 0 014 0zM76 170a2 2 0 11-4 0 2 2 0 014 0zM100 170a2 2 0 11-4 0 2 2 0 014 0zM124 170a2 2 0 11-4 0 2 2 0 014 0zM148 170a2 2 0 11-4 0 2 2 0 014 0zM172 170a2 2 0 11-4 0 2 2 0 014 0z" fill="#A5C3FD"/></svg>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_5)">
+<circle cx="2" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="2" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="26" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="50" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="74" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="98" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="122" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="146" r="2" fill="#A5C3FD"/>
+<circle cx="2" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="26" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="50" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="74" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="98" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="122" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="146" cy="170" r="2" fill="#A5C3FD"/>
+<circle cx="170" cy="170" r="2" fill="#A5C3FD"/>
+</g>
+<defs>
+<clipPath id="clip0_2_5">
+<rect width="180" height="180" fill="white"/>
+</clipPath>
+</defs>
+</svg>
