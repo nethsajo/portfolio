@@ -18,7 +18,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2.4rem;
+    gap: 1.6rem;
     max-width: 80%;
 
     @include responsive(phone-sm) {
@@ -30,8 +30,8 @@
     display: flex;
     align-items: center;
     border: 1px solid var(--color-primary-dark);
-    padding: 1rem 2.4rem;
-    font-size: 16px;
+    padding: 1rem 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     border-radius: var(--b-radius-3);
     min-height: 5rem;
